@@ -8,5 +8,5 @@ RUN service httpd restart
 ADD https://www.free-css.com/assets/files/free-css-templates/download/page262/shicso.zip /var/www/html/
 WORKDIR /var/www/html
 RUN unzip shicso.zip
-CMD["/usr/sbin/httpd","-D","FOREGROUND"]
+CMD ["/usr/sbin/httpd","-D","FOREGROUND"]
 expose 80
